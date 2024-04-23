@@ -1,0 +1,17 @@
+
+sample
+The first line denotes the total number of data rows in the file. Each subsequent row contains two city
+names, the flight cost, and the flight duration, separated by a pipe symbol.
+
+requested
+The first line specifies the number of flight plans requested. Subsequent lines consist of pipe-delimited
+city pairs followed by a trailing character indicating sorting preference for the output flights by time (T) or
+cost (C). Your solution will identify all flight paths between these cities (if any exist) and calculate the total
+cost and time spent in the air.
+
+
+
+based on the flights given (the graph), need to create an adjacentcy list
+to hold the data and which flights can go to eachother. Then need an algo to
+have inputs from one city to another to then find the paths from each 
+AKA dystras could be good 
