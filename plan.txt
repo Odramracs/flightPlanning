@@ -1,6 +1,7 @@
 Read Input Files: Parse the data from the two input files, one containing flight legs data and the other containing requested flight plans.
 Create an Adjacency List: Build an adjacency list representation of the flight graph based on the flight legs data. 
 Each city will have a linked list containing information about the cities reachable from it.
+
 Implement an Iterative Backtracking Algorithm: Utilize an iterative backtracking algorithm, employing a stack to track the progress of the search for flight paths. 
 This algorithm will help find all feasible flight routes between the origin and destination cities.
 Calculate Total Cost and Time for Each Flight Path: As you traverse through the flight graph, calculate the total cost and time for each flight path.
