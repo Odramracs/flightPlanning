@@ -1,17 +1,17 @@
+Read Input Files: Parse the data from the two input files, one containing flight legs data and the other containing requested flight plans.
+Create an Adjacency List: Build an adjacency list representation of the flight graph based on the flight legs data. 
+Each city will have a linked list containing information about the cities reachable from it.
+Implement an Iterative Backtracking Algorithm: Utilize an iterative backtracking algorithm, employing a stack to track the progress of the search for flight paths. 
+This algorithm will help find all feasible flight routes between the origin and destination cities.
+Calculate Total Cost and Time for Each Flight Path: As you traverse through the flight graph, calculate the total cost and time for each flight path.
+Output the Results: For each requested flight plan, print the three most efficient flight plans based on the sorting preference (time or cost). 
+If fewer than three possible plans exist or if no viable flight plan is found, print an appropriate error message.
+Implement Linked List and Stack Classes: Create classes for linked list and stack to facilitate the implementation of the algorithm.
+Object-Oriented Design: Ensure your solution follows an object-oriented design, with clearly defined classes, methods, and interactions.
+Here's a general outline of how you can structure your solution:
 
-sample
-The first line denotes the total number of data rows in the file. Each subsequent row contains two city
-names, the flight cost, and the flight duration, separated by a pipe symbol.
-
-requested
-The first line specifies the number of flight plans requested. Subsequent lines consist of pipe-delimited
-city pairs followed by a trailing character indicating sorting preference for the output flights by time (T) or
-cost (C). Your solution will identify all flight paths between these cities (if any exist) and calculate the total
-cost and time spent in the air.
-
-
-
-based on the flights given (the graph), need to create an adjacentcy list
-to hold the data and which flights can go to eachother. Then need an algo to
-have inputs from one city to another to then find the paths from each 
-AKA dystras could be good 
+Create a class for the flight graph, which will contain methods for building the adjacency list, finding flight paths, and calculating total cost and time.
+Implement a class for the iterative backtracking algorithm, using a stack to track the progress of the search.
+Design classes for linked list and stack, ensuring they support the required functionality.
+Write a main program that coordinates the reading of input files, processing of data, and output of results.
+By following these steps and structuring your solution accordingly, you should be able to devise all feasible flight routes and calculate the total incurred cost for each journey. 
