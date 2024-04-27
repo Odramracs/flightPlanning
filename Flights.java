@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+// flight class to read in the sample cities and use them in the adjacency list 
 public class Flights {
     static class FlightRequest {
         String city1;
@@ -20,6 +21,31 @@ public class Flights {
             this.mode = mode;
         }
     }
+
+    // class for each city being read from the file 
+    static class City {
+        String name;
+        List<Connection> connections;
+
+        City(String name) {
+            this.name = name;
+            this.connections = new ArrayList<>();
+        }
+    }
+    // class for the edges between the cities and has each of the cost and time 
+    static class Connection {
+        String city;
+        int cost;
+        int time;
+
+        Connection(String city, int cost, int time) {
+            this.city = city;
+            this.cost = cost;
+            this.time = time;
+        }
+    }
+
+    // function to find the 3 best paths using the backtracking function
     static List<List<Connection>> findBestPaths(String source, String destination, List<City> cities, Comparator<List<Connection>> comparator) {
         List<List<Connection>> bestPaths = new ArrayList<>();
         List<Connection> currentPath = new ArrayList<>();
@@ -27,6 +53,10 @@ public class Flights {
         return bestPaths;
     }
 
+    // backtracking algorithm using DFS to find the best path, checks to see if the current city is the destination, if it is then add it to the bestpaths array if it is better than the current 3 best paths. 
+    // if its not the destination then go to the next connection from the current city 
+    // for each connetion if the connected city is not already in the current path then add the edge to the current path and call backtrack recursivly 
+    // after exploring all the connection to the current city remove the last connection from the current path to backtrack and explore the other paths 
     static void backtrack(String current, String destination, List<City> cities, List<Connection> currentPath, List<List<Connection>> bestPaths, Comparator<List<Connection>> comparator) {
         if (current.equals(destination)) {
             if (bestPaths.size() < 3 || comparator.compare(currentPath, bestPaths.get(2)) < 0) {
@@ -48,6 +78,7 @@ public class Flights {
         }
     }
 
+    // function to get the connection between cities 
     static List<Connection> getConnections(String cityName, List<City> cities) {
         for (City city : cities) {
             if (city.name.equals(cityName)) {
@@ -57,6 +88,7 @@ public class Flights {
         return new ArrayList<>();
     }
 
+    // function to check if a given city is inside of a flight path 
     static boolean containsCity(List<Connection> path, String cityName) {
         for (Connection connection : path) {
             if (connection.city.equals(cityName)) {
@@ -66,6 +98,7 @@ public class Flights {
         return false;
     }
 
+    // function to get the total cost of a flight path
     static int getTotalCost(List<Connection> path) {
         int totalcost = 0;
         for (Connection connection : path) {
@@ -74,6 +107,7 @@ public class Flights {
         return totalcost;
     }
 
+    // function to get the total time of a flight path
     static int getTotalTime(List<Connection> path) {
         int totalTime = 0;
         for (Connection connection : path) {
@@ -82,10 +116,12 @@ public class Flights {
         return totalTime;
     }
 
+    //function to find the order between the given paths 
     static void sortBestPaths(List<List<Connection>> bestPaths, Comparator<List<Connection>> comparator) {
         Collections.sort(bestPaths, comparator);
     }
 
+    // adding edges between the cities 
     static void addConnection(List<City> cities, String cityName, String neighborName, int cost, int time) {
         for (City city : cities) {
             if (city.name.equals(cityName)) {
@@ -98,6 +134,7 @@ public class Flights {
         cities.add(city);
     }
 
+    // function to write the output to file instead of the console 
     static void writePathsToFile(BufferedWriter writer, List<List<Connection>> paths, int flightNumber, String source, String destination) throws IOException {
         for (int i = 0; i < Math.min(2, paths.size()); i++) {
             writer.write("Path " + (i + 1) + ": ");
@@ -116,34 +153,13 @@ public class Flights {
             writer.newLine();
         }
     }
-    static class City {
-        String name;
-        List<Connection> connections;
-
-        City(String name) {
-            this.name = name;
-            this.connections = new ArrayList<>();
-        }
-    }
-    static class Connection {
-        String city;
-        int cost;
-        int time;
-
-        Connection(String city, int cost, int time) {
-            this.city = city;
-            this.cost = cost;
-            this.time = time;
-        }
-    }
 
     public static void main(String[] args) {
-        // Initialize an empty list to store city connections
+        //empty list to store city connections
         List<City> cities = new ArrayList<>();
-
-        // Read the number of connections from the file (assuming it's the first line)
         String filePath = "sample.txt";
         int numConnections = 0;
+        //getting the first line 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String firstLine = br.readLine();
             numConnections = Integer.parseInt(firstLine);
@@ -151,12 +167,11 @@ public class Flights {
             e.printStackTrace();
         }
 
-        // Read the information from the file
+        //reading the file
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            // Skip the first line
             br.readLine();
             String line;
-            // Skip the first line when reading connections
+            //skip the first line
             for (int i = 0; i < numConnections; i++) {
                 line = br.readLine();
                 String[] parts = line.split("\\|");
@@ -164,16 +179,13 @@ public class Flights {
                 String city2 = parts[1];
                 int cost = Integer.parseInt(parts[2]);
                 int time = Integer.parseInt(parts[3]);
-
-                // Add city2 to the neighbors of city1 and vice versa
+                //adding edges 
                 addConnection(cities, city1, city2, cost, time);
                 addConnection(cities, city2, city1, cost, time);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        // Read the requested flights from another file
         String flightsFilePath = "requested.txt";
         List<FlightRequest> requestedFlights = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(flightsFilePath))) {
@@ -191,10 +203,8 @@ public class Flights {
             e.printStackTrace();
         }
 
-        // Output file path
+        //out
         String outputFilePath = "output.txt";
-
-        // Process each requested flight and write the output to the file
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath))) {
             for (int i = 0; i < requestedFlights.size(); i++) {
                 FlightRequest flightRequest = requestedFlights.get(i);
