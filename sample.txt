@@ -1,5 +1,205 @@
-4
+204
 Dallas|Austin|98|47
 Austin|Houston|95|39
 Dallas|Houston|101|51
 Austin|Chicago|144|192
+Dallas|San Antonio|87|62
+Austin|San Francisco|150|210
+Dallas|New York|153|194
+Houston|Chicago|144|181
+Austin|Miami|135|186
+Dallas|Phoenix|105|89
+Houston|San Antonio|80|75
+Dallas|Boston|161|202
+Austin|Las Vegas|124|170
+Dallas|Los Angeles|143|198
+Houston|New Orleans|85|50
+Austin|Denver|115|150
+Dallas|Philadelphia|149|195
+Austin|Seattle|175|215
+Houston|Las Vegas|135|172
+Dallas|Orlando|122|157
+Austin|Portland|171|220
+Houston|Phoenix|109|115
+Dallas|Atlanta|110|137
+Austin|Baltimore|145|198
+Houston|San Diego|145|189
+Dallas|San Jose|145|210
+Austin|Detroit|138|189
+Houston|Columbus|127|155
+Dallas|Indianapolis|140|153
+Austin|Charlotte|130|160
+Houston|Minneapolis|148|184
+Dallas|Memphis|93|77
+Austin|Nashville|105|125
+Houston|Tucson|117|130
+Dallas|Milwaukee|142|175
+Austin|Pittsburgh|140|182
+Houston|Kansas City|124|145
+Dallas|Salt Lake City|129|178
+Austin|Albuquerque|80|110
+Houston|Omaha|135|160
+Dallas|Cleveland|148|193
+Austin|St. Louis|118|147
+Houston|Indianapolis|140|162
+Dallas|Jacksonville|120|150
+Austin|Richmond|150|202
+Houston|Charlotte|130|170
+Dallas|Louisville|115|130
+Austin|Memphis|98|108
+Houston|Pittsburgh|135|175
+Dallas|Sacramento|145|210
+Austin|Tampa|125|160
+Houston|Orlando|135|180
+Dallas|Oklahoma City|80|90
+Austin|Cincinnati|135|175
+Houston|Detroit|142|192
+Dallas|Las Vegas|125|171
+Austin|Kansas City|122|140
+Houston|St. Louis|125|150
+Dallas|Miami|140|189
+Austin|Indianapolis|135|148
+Houston|Portland|180|220
+Dallas|Denver|125|153
+Austin|Minneapolis|150|196
+Houston|Baltimore|145|190
+Dallas|Columbus|135|160
+Austin|San Jose|155|210
+Houston|New York|150|195
+Dallas|San Diego|145|198
+Austin|Omaha|132|150
+Houston|Boston|160|210
+Dallas|New Orleans|95|75
+Austin|Salt Lake City|140|170
+Houston|Philadelphia|152|198
+Dallas|Seattle|175|215
+Austin|Orlando|120|160
+Houston|Nashville|115|130
+Dallas|Tucson|130|120
+Austin|Phoenix|105|100
+Houston|Cleveland|145|193
+Dallas|Baltimore|145|195
+Austin|Milwaukee|140|175
+Houston|Miami|140|185
+Dallas|Tampa|120|160
+Austin|Atlanta|110|150
+Houston|San Francisco|155|210
+Dallas|Portland|170|220
+Austin|Chicago|145|185
+Houston|Cincinnati|135|180
+Dallas|Richmond|150|205
+Austin|Los Angeles|143|200
+Houston|San Antonio|75|82
+Dallas|Kansas City|123|147
+Austin|Philadelphia|148|195
+Houston|Las Vegas|130|170
+Dallas|Detroit|138|193
+Austin|Columbus|132|160
+Houston|Charlotte|128|175
+Dallas|Minneapolis|148|194
+Austin|Louisville|120|130
+Houston|Sacramento|155|210
+Dallas|Indianapolis|138|155
+Austin|Cleveland|140|193
+Houston|Tampa|130|175
+Dallas|Nashville|110|125
+Austin|Milwaukee|140|178
+Dallas|Buffalo|154|200
+Houston|Raleigh|130|165
+Austin|Oklahoma City|80|95
+Dallas|Birmingham|115|135
+Houston|Louisville|125|150
+Austin|El Paso|110|130
+Dallas|Detroit|144|198
+Houston|Salt Lake City|150|175
+Austin|Tucson|115|138
+Dallas|San Antonio|85|65
+Houston|Atlanta|112|143
+Austin|Columbus|142|183
+Dallas|Charlotte|130|160
+Houston|Chicago|148|184
+Austin|Cleveland|145|190
+Dallas|Kansas City|125|148
+Houston|New York|150|195
+Austin|Richmond|150|205
+Dallas|Las Vegas|130|168
+Houston|Philadelphia|145|190
+Austin|St. Louis|122|150
+Dallas|Orlando|120|160
+Houston|Indianapolis|140|160
+Austin|Pittsburgh|142|185
+Dallas|Miami|145|190
+Houston|San Diego|148|190
+Austin|San Francisco|150|210
+Dallas|Denver|125|152
+Houston|Seattle|175|215
+Austin|Portland|172|220
+Dallas|Baltimore|145|192
+Houston|Omaha|132|155
+Austin|Sacramento|155|210
+Dallas|Tucson|132|120
+Houston|Minneapolis|150|190
+Austin|Boston|160|210
+Dallas|Albuquerque|88|110
+Houston|New Orleans|85|48
+Austin|Memphis|110|118
+Dallas|Cincinnati|135|173
+Houston|Portland|178|220
+Austin|San Diego|148|200
+Dallas|Phoenix|108|92
+Houston|Los Angeles|150|195
+Austin|Tampa|122|165
+Dallas|Salt Lake City|135|170
+Houston|Nashville|115|135
+Austin|Louisville|120|133
+Dallas|Jacksonville|118|153
+Houston|Orlando|130|175
+Austin|Baltimore|148|195
+Dallas|Cleveland|145|193
+Houston|Las Vegas|135|170
+Austin|Kansas City|120|145
+Dallas|San Jose|148|210
+Houston|Denver|128|153
+Austin|Phoenix|105|98
+Dallas|Memphis|95|80
+Houston|Milwaukee|142|180
+Austin|Indianapolis|138|150
+Dallas|Pittsburgh|145|188
+Houston|Charlotte|130|165
+Austin|New York|153|196
+Dallas|Miami|150|192
+Houston|San Antonio|80|70
+Austin|Buffalo|155|198
+Dallas|Los Angeles|143|195
+Houston|Tampa|130|175
+Austin|Detroit|140|192
+Dallas|Minneapolis|150|192
+Houston|Boston|160|210
+Austin|Las Vegas|125|170
+Dallas|Omaha|135|155
+Houston|Cleveland|145|192
+Austin|Chicago|145|189
+Dallas|Louisville|115|133
+Houston|Raleigh|128|165
+Austin|Philadelphia|150|195
+Dallas|Kansas City|122|148
+Houston|Memphis|92|110
+Austin|St. Louis|122|150
+Dallas|Indianapolis|138|155
+Houston|San Francisco|152|210
+Austin|New Orleans|98|60
+Dallas|Portland|172|220
+Houston|Detroit|142|192
+Austin|Seattle|175|218
+Dallas|Sacramento|155|208
+Houston|Orlando|130|175
+Austin|Minneapolis|150|194
+Dallas|Boston|160|210
+Houston|Atlanta|110|145
+Austin|San Antonio|85|65
+Dallas|Pittsburgh|142|185
+Houston|Baltimore|145|190
+Austin|Milwaukee|140|178
+Dallas|Richmond|150|202
+Houston|Chicago|148|185
+Austin|Las Vegas|122|170
